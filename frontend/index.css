@@ -1,0 +1,34 @@
+
+.pro-bar{
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #4267b2;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.pro-bar .row{
+    margin-right: 0;
+    margin-left: 0;
+    padding: 10px;
+    text-align: center;
+}
+.pro-bar .row a{
+    text-decoration: none;
+}
+.pro-bar span{
+    color: white;
+}
+
+@media(max-width : 991px){
+    .pro-bar{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
