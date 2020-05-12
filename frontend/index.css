@@ -1,11 +1,20 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
 
 .pro-bar{
     padding-left: 0;
     padding-right: 0;
     background-color: #4267b2;
     width: 100%;
-    font-family: 'Nunito', sans-serif;
-    font-size: 13px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
     line-height: 1.4;
 }
 
@@ -24,11 +33,12 @@
 
 
 header{
-    background-color: aqua;
+    background-color: white;
 }
 
 header .menu{
     width: 100%;
+    padding-right: 0;
 }
 header .menu row{
     width: 100%;
@@ -66,7 +76,7 @@ header nav.desk-menu ul{
 }
 header nav.desk-menu li{
     display: inline-block;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     line-height: 1.4;
     padding: 0;
@@ -76,6 +86,8 @@ header nav.desk-menu li{
 }
 header nav.desk-menu li a{
     display: inline-block;
+    color: black;
+    text-decoration: none;
     height: 100%;
     padding-top: 15px;
     text-transform: uppercase;
@@ -109,10 +121,7 @@ header nav.icon li{
 }
 header nav.icon li a{
     display: inline-block;
-    width: 22px;
-    /* height: 24px; */
-    display: inline-block;
-    
+    width: 19px;
     height: 100%;
 }
 header nav.icon li a img{
@@ -120,6 +129,50 @@ header nav.icon li a img{
     height: 100%;
 }
 
+span.count {
+    display: inline-block;
+    font-size: 10px;
+    position: absolute;
+    top: 30px;
+    margin-right: 0px;
+    padding-right: 10px;
+}
+
+li.cart {
+    margin-right: 20px !important;
+}
+
+header nav.icon li a .bar{
+    opacity: 0;
+    visibility: hidden;
+    
+    position: relative;
+    display: block;
+    background: black;
+    width: 16px;
+    height: 1px;
+    top: -5px;
+}
+
+header nav.icon li a .bar::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    width: 16px;
+    height: 1px;
+    background: #000;
+}
+
+header nav.icon li a .bar::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 16px;
+    height: 1px;
+    background: #000;
+}
 
 /* .col-sm-5 {
     width: 41.66666667%;
@@ -130,6 +183,15 @@ header nav.icon li a img{
 } */
 
 @media (max-width: 991px){
+
+    header nav.icon li a {
+        width: 17px;
+    }
+
+    header nav.icon li a .bar{
+        opacity: 1;
+        visibility: visible;
+    }
 
     .pro-bar{
         font-size: 10px;
@@ -151,4 +213,18 @@ header nav.icon li a img{
         width: 70%;
     }
 
+}
+
+
+main.mainIndex{
+    width: 100%;
+}
+.containSlide{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+section.sectionSlide img{
+    width: 100%;
+    height: 100%;
 }
