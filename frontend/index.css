@@ -341,4 +341,62 @@ section.sectionSlide img{
     .heading .viewAll a{
         font-size: 10px;
     }
+
+    .productDetail h3{
+        font-size: 12px;
+    }
+    .productDetail p{
+        font-size: 12px;
+    }
+}
+
+.collection-2{
+    margin-top: -15px;
+}
+
+.productImg {
+
+    position: relative;
+    display: block;
+    transition: 0.4s;
+}
+.productImg a{
+
+    display: block;
+}
+.productImg a img{
+    width: 100%;
+    height: 100%;
+}
+.productImg a .frontImg{
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.4s;
+}
+.productImg a .backImg{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.productImg:hover a .frontImg{
+    opacity: 0;
+    visibility: hidden;
+
+}
+.productImg:hover a .backImg{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.productDetail{
+    width: 100%;
+    text-align: center;
+}
+.productDetail h3{
+    font-size: 14px;
+}
+.productDetail p{
+    font-size: 14px;
 }
